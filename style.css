@@ -1,0 +1,51 @@
+/* Bootstrap과 함께 사용할 Custom CSS 오버라이드 */
+
+/* 기본 폰트 및 컬러 */
+body {
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  color: #333;
+}
+
+/* Hero 섹션 */
+.hero {
+  background: url("../assets/hero-bg.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding-top: 56px; /* fixed navbar 높이 보정 */
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+/* Hero 텍스트 */
+.hero .display-4 {
+  font-weight: bold;
+}
+.hero .lead {
+  font-size: 1.25rem;
+}
+
+/* 버튼 그룹 여백 조정 */
+.hero .btn {
+  min-width: 200px;
+}
+
+/* 기능 소개 카드 이미지 비율 유지 */
+.card-img-top {
+  object-fit: contain;
+  height: 200px;
+}
+
+/* 사용자 여정 아이콘 크기 */
+.fs-1 {
+  font-size: 3rem !important;
+}
+
+/* Footer 링크 간격 */
+footer .me-3 {
+  margin-right: 1rem !important;
+}
+
+/* 기타 오버라이드: 버튼 hover 시 opacity */
+.btn:hover {
+  opacity: 0.9;
+}
